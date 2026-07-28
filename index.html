@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery by Ankesh | Photography Portfolio</title>
     
-    <!-- Fancybox CSS (Lightbox Slider) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-
     <style>
         :root {
             --bg-color: #0d0e12;
@@ -96,13 +93,6 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
         }
 
-        /* Link Wrapper around Images */
-        .photo-card a {
-            display: block;
-            overflow: hidden;
-            text-decoration: none;
-        }
-
         .photo-card img {
             width: 100%;
             height: 450px;
@@ -111,7 +101,7 @@
             transition: transform 0.5s ease, filter 0.5s ease;
         }
 
-        /* Subtle Hover Effect on Thumbnail Image */
+        /* Hover Effect on Image */
         .photo-card:hover img {
             transform: scale(1.04);
             filter: brightness(1.08);
@@ -180,9 +170,7 @@
                 
                 <!-- Photo 1 -->
                 <div class="photo-card">
-                    <a href="119A0360.jpg" data-fancybox="gallery" data-caption="Auckland Spire Sunset — Architecture & Cityscape">
-                        <img src="119A0360.jpg" alt="Auckland Spire Sunset">
-                    </a>
+                    <img src="119A0360.jpg" alt="Auckland Spire Sunset">
                     <div class="photo-info">
                         <p class="photo-title">Auckland Spire Sunset</p>
                         <p class="photo-desc">Architecture & Cityscape</p>
@@ -191,9 +179,7 @@
 
                 <!-- Photo 2 -->
                 <div class="photo-card">
-                    <a href="https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1600&q=80" data-fancybox="gallery" data-caption="Urban Shadows — Street & Architecture">
-                        <img src="https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=800&q=80" alt="Cityscape Photo">
-                    </a>
+                    <img src="https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=800&q=80" alt="Urban Shadows">
                     <div class="photo-info">
                         <p class="photo-title">Urban Shadows</p>
                         <p class="photo-desc">Street & Architecture</p>
@@ -202,12 +188,19 @@
 
                 <!-- Photo 3 -->
                 <div class="photo-card">
-                    <a href="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1600&q=80" data-fancybox="gallery" data-caption="Misty Trails — Outdoor & Mood">
-                        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80" alt="Misty Forest">
-                    </a>
+                    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80" alt="Misty Trails">
                     <div class="photo-info">
                         <p class="photo-title">Misty Trails</p>
                         <p class="photo-desc">Outdoor & Mood</p>
+                    </div>
+                </div>
+
+                <!-- Photo 4 -->
+                <div class="photo-card">
+                    <img src="119A0434.jpg" alt="New Capture">
+                    <div class="photo-info">
+                        <p class="photo-title">Frame 119A0434</p>
+                        <p class="photo-desc">Photography</p>
                     </div>
                 </div>
 
@@ -226,18 +219,5 @@
         </footer>
     </div>
 
-    <!-- Fancybox JS Script -->
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script>
-        // Initialize Fancybox Lightbox Slider
-        Fancybox.bind("[data-fancybox='gallery']", {
-            Carousel: {
-                transition: "fade", // Smooth fading transition between slides
-            },
-            Images: {
-                zoom: true, // Enables click-to-zoom in lightbox view
-            }
-        });
-    </script>
 </body>
 </html>
